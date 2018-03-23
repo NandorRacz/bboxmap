@@ -1,11 +1,14 @@
-﻿body {
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin-ext');
+body {
     background-color: black;
+    font-family: 'Roboto', sans-serif;
 }
 .container {
     background-color: white;
     width: 80%;
     margin: 0 auto;
 }
+
 
 /* SVG styling for interactive image
 ========================================================*/
