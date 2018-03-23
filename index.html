@@ -9,7 +9,7 @@
     <div class="container">
         <h1>This is a test for the interactive map thing</h1>
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3508 2481">
-            <g class="tooltip" title="Room name">
+            <g class="tooltip" id="Rent1" title="Room name">
                 <title>Room 277</title>
                 <a id="277" class="hotspot">
                     <rect x="2928.5" y="233.5" width="424" height="206" />
@@ -239,6 +239,10 @@
             </g>
         </svg>
 </div>
+    <div id="Rent1cont">
+        <a href="http://via.placeholder.com/750x750" target="_blank"><img src="http://via.placeholder.com/350x350"></a>
+        <p>For Rent - 43m<sup>2</sup></p>
+    </div>
 <script src="https://unpkg.com/tippy.js@2.4.0/dist/tippy.all.min.js"></script>
     <script>
         tippy('.tooltip', {
@@ -248,9 +252,14 @@
             distance: 10,
             followCursor: true,
             inertia: true,
-            size: 'large',
+            size: 'big',
             theme: 'bbox',
+        });
+        tippy('#Rent1', {
+            html: document.querySelector('#Rent1cont'),
+            interactive: true,
         })
+
     </script>
 </body>
 </html>
